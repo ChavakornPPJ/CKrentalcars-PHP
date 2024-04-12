@@ -1,0 +1,193 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    
+    
+}
+.Menu-bar{
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.Menu-logo{
+    
+    top: 0;
+    bottom:0 ;
+    left: 30px;
+    padding-top: 8px;
+    position: absolute;  
+    z-index: 1; 
+    font-family: 'Cinzel';
+    font-size: 40px;
+    
+    
+   /* border: 1px solid blue;*/
+}
+.Home-content{
+    
+    top: 0;
+    bottom:0 ;
+    right: 0;
+    left: 1400px;
+    /*left: 1000px;*/
+    position: relative;
+    font-family: 'Poppins';
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+    /*border: 1px solid red;*/
+}
+.Home{
+    margin-right: 50px;
+    margin-left: 50px;
+    /*border: 1px solid green;*/
+}
+.Cars{
+    
+   /* border: 1px solid green;*/
+}
+.Contact{
+    margin-right: 50px;
+    margin-left: 50px;
+    /*border: 1px solid green;*/
+}
+.Home-tap{
+    font-family: 'poppins';
+    text-decoration: none;
+    color: white;
+}
+.Cars-tap{
+    font-family: 'poppins';
+    text-decoration: none;
+    color: white;
+}
+.bg-home{
+  /*  border: 1px solid red;*/
+    margin-top: 72px;
+    
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 800px 780px;
+    justify-content: center;
+}
+.bg-home1{
+    
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+   /* border: 1px solid red;*/
+}
+
+.bg-home2{
+    
+   /* border: 1px solid blue;*/
+}
+.menus-icon{
+  /*  border: 1px solid rgba(255, 255, 255, 0.125);*/
+}
+.btn-icon{
+    background-color: transparent;
+    border: none;
+    padding-top: 8px;
+
+}
+.ic-menu{
+    width: 52px;
+    height: 52px;
+    transition: .5s ;
+}
+.ic-menu:hover{
+    transform: scale(.9);
+    transition: .2s ;
+}.bg-img{
+    
+    
+    /*border: 1px solid blue;*/
+    width: 800px ; 
+    height: 500px;
+    margin-top: 160px;
+    margin-left: 50px;
+    object-fit: cover;
+    
+}
+.intro-home{
+    font-size: 90px;
+    font-family: 'Oxygen';
+    font-weight: bold;
+    word-spacing: 5px;
+    overflow-wrap: break-word;
+   /* border: 1px solid blue;*/
+    width: 500px;
+    word-wrap: break-word;
+    margin-top: 230px;
+    margin-left: 120px;
+    
+}
+.glow-box{
+   /* border: 1px solid blue;*/
+}
+.discover-btn{
+    font-size: 20px;
+    background-color: black;
+    color:  #9933ff;
+    display: flex;
+    
+    border: 2px solid  #9933ff;
+    
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-left: 280px;
+    
+}
+.discover-now-btn{
+    font-size: 20px;
+    background-color: black;
+    color:  #9933ff;
+    text-decoration: none;
+}
+
+.discover-btn:hover{
+    
+
+    text-shadow: 0 0 7px #9933ff,
+    0 0 10px #9933ff,
+    0 0 21px #9933ff,
+    0 0 42px #9933ff,
+    0 0 82px #9933ff,
+    0 0 92px #9933ff,
+    0 0 102px #9933ff,
+    0 0 151px #9933ff;
+    
+    box-shadow: inset 0 0 10px #9933ff,0 0 21px #9933ff;
+    
+    
+}
+.discover-btn:hover::after{
+    content:"";
+    position: absolute;
+    background-color: #9933ff;
+    margin-top: 50px;
+    margin-left: 0;
+    width: 130px;
+    height: 20px;
+    transform: perspective(30px) rotateX(40deg);
+    filter: blur(10px);
+    
+}
+    
