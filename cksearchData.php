@@ -1,15 +1,16 @@
 <?php
         require('dataBaseCon.php');
+        
+        $careve = $_POST["everythingcar"];
+    
+        $sql = "SELECT * FROM ckcardb WHERE carname LIKE '%$careve%' || typecar LIKE '%$careve%' ORDER BY carname ASC ";
 
-        $sql = "SELECT * FROM ckcardb ORDER BY carname ASC ";
         $result = mysqli_query($cont,$sql);
 
         $count = mysqli_num_rows($result);
         $prior = 1; 
 
 ?>
-
-
 
 <!DOCTYPE html>
     <html lang="en">
@@ -25,23 +26,24 @@
                 <h1 class="text-center">CK Car Database</h1>
                 <?php if($count>0){?>
 
-                    <form action="cksearchData.php" class="mt-5" method="POST">
+                    <a href="ckadminAccessData.php" class="btn btn-primary">Go Back to CK DataBase</a>
+
+                    <form action="cksearchData.php" class="mt-5" method="POST"> 
                         <label for="">Search Car</label>
-                        <input type="text" placeholder="Input CarName or Typecar" name="everythingcar">
+                        <input type="text" placeholder="Input Car Name" name="everythingcar">
                         <input type="submit" value="Search" class="btn btn-primary mb-1 mx-2">
                     </form>
 
                     <table class="table table-striped table-dark" border="1">
                         <thead>
                             <tr>
-
                                 <th>Id</th>
                                 <th>CarName</th>
                                 <th>TypeCar</th>
                                 <th>Image</th>
                                 <th>Status</th>
                                 <th>Action</th>
-                       
+                               
                             </tr>
                         </thead>
                         <tbody>
@@ -114,6 +116,8 @@
                 
                 
             </div>
+
+            <?php $_POST["everythingcar"] = ""; ?>
             
         </body>
 
